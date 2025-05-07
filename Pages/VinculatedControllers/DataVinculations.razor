@@ -1,0 +1,37 @@
+@page "/datavincluations"
+
+
+<div class="container mt-5">
+    <h1 >Data Vinculations</h1>  
+    <p class="mb-5">This is a simple example of data vinculation in Blazor.</p>  
+    <div>
+        <h1>Your email</h1>
+       <p>
+        Your email address is:
+        <input @bind="customerEmail" />
+        </p>       
+    </div>
+
+    <div >
+        <h1>My favorite pizza is: @favPizza</h1>
+        <p>
+            Enter your favorite pizza:
+            <input @bind="favPizza" />
+        </p>
+    </div>
+
+    <div>
+        <h1>My favorite pizza is: @favoritePizza</h1>
+        <p>
+            Enter your favorite pizza:
+            <input @bind="favoritePizza" />
+        </p>
+    </div>
+
+</div>
+
+@code {
+    private string customerEmail = "Yuri@manhica.com";
+    private string favPizza { get; set; } = "Lazanha";
+    private string favoritePizza { get; set; } = "Margherita";
+}
