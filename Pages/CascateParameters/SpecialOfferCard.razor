@@ -1,0 +1,19 @@
+<div class="bg-white p-4 rounded shadow w-50 mx-auto mt-4">
+    <h2>Deal: @DealName</h2>
+    <p>Get 50% off on all pizzas!</p>
+    <p>Offer valid on Thursdays only.</p>
+
+    <h3>Description: @DealDescription</h3>
+    <p>Don't miss out on this amazing deal!</p>
+
+    <p>Order now and enjoy your favorite pizzas at half the price!</p>
+    <p>Terms and conditions apply.</p>
+</div>
+
+@code {
+    [CascadingParameter(Name = "DealName")]
+    public string DealName { get; set; }
+
+    [CascadingParameter(Name = "DealDescription")]
+    public string DealDescription { get; set; }
+}

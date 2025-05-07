@@ -1,0 +1,11 @@
+<div>
+    <h3 class="text-green-500">New Pizza: @PizzaName</h3>
+    <p>@PizzaDescription</p>
+</div>
+@code {
+    [Parameter]
+    public string PizzaName { get; set; }
+    
+    [Parameter]
+    public string PizzaDescription { get; set; } = "The best pizza you've ever tasted.";
+}

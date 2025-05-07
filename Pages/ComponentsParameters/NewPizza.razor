@@ -1,0 +1,14 @@
+@page "/newpizza"
+
+<div class="text-center w-100 flex justify-center items-center flex-col">
+    <h2>New Pizza: @PizzaName</h2>
+    <p>@PizzaDescription</p>
+</div>
+
+@code {
+    [Parameter]
+    public string PizzaName { get; set; } = "Delicious Pizza";
+    
+    [Parameter]
+    public string PizzaDescription { get; set; } = "The best pizza you've ever tasted.";
+}

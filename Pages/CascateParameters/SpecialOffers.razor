@@ -1,0 +1,13 @@
+@page "/specialoffers"
+
+@using BlazingPizza.Pages
+
+<div class="text-center w-100 flex justify-center items-center flex-col">
+    <h1>Special Offers</h1>
+
+    <CascadingValue Name="DealName" Value="@("Throwback Thursday")">
+        <CascadingValue Name="DealDescription" Value="@("Limited time offer!")">
+            <SpecialOfferCard />
+        </CascadingValue>
+    </CascadingValue>
+</div>

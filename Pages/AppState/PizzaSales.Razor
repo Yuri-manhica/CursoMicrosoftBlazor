@@ -1,0 +1,19 @@
+@page "/pizzasales"
+
+@using AppState
+@inject PizzaSalesState SalesState
+
+
+<div class="text-center w-100 flex justify-center items-center flex-col">
+    <h1>Welcome to Blazing Pizzas</h1>
+    <h2>Today's Sales</h2>
+    <p>Total Pizzas Sold Today: <span class="text-bold"> @SalesState.PizzasSoldToday</span></p>
+    <button class="btn btn-primary" @onclick="IncrementSales">Increment Sales</button>
+</div>
+
+@code {
+    private void IncrementSales()
+    {
+        SalesState.PizzasSoldToday++;
+    }
+}

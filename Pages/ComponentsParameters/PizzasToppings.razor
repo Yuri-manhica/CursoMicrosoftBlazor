@@ -1,0 +1,9 @@
+@using Pages
+
+@page "/pizzas-toppings"
+
+<div class="bg-gray-200 w-1000 justify-center items-center p-4">
+    <h1 class="text-green-500">Our Latest Pizzas and Topping</h1>
+    <Pizza PizzaName="Hawaiian" PizzaDescription="The one with pineapple" />
+    <Topping Model="@(new MyPizzaTopping() { Name = "Chilli Sauce", Ingredients = "Three kinds of chilli." })" />
+</div>
